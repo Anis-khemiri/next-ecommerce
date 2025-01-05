@@ -1,7 +1,8 @@
-import Link from 'next/link'
-import React from 'react'
-import Menu from './Menu'
-import { SearchBox } from './SearchBox'
+import Link from "next/link";
+import React from "react";
+import Menu from "./Menu";
+import { SearchBox } from "./SearchBox";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -23,9 +24,10 @@ const Header = () => {
                   d="M4 6h16M4 12h16M4 18h16"
                 ></path>
               </svg>
+             
             </label>
-            <Link href="/" className="btn btn-ghost text-lg">
-              Next Amazona V2
+            <Link href="/" className="btn">
+              <Image src="/images/logo.svg" width={60} height={60} alt="" />
             </Link>
           </div>
 

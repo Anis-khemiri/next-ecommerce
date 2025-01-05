@@ -5,6 +5,7 @@ import Providers from '@/components/Providers'
 import DrawerButton from '@/components/DrawerButton'
 import Sidebar from '@/components/Sidebar'
 import Header from '@/components/header/Header1'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
   title: 'Next Amazona V2',
   description: 'Modern ECommerce Website',
 }
+const currentDate = new Date();
 
+let myDate = currentDate.toString().split(' ').slice(3, 4).join(' ');
 export default function RootLayout({
   children,
 }: {
@@ -28,9 +31,10 @@ export default function RootLayout({
               <div className="min-h-screen flex flex-col">
                 <Header />
                 {children}
-                <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+                <Footer />
+                <footer className="footer footer-center p-4 bg-blue-900 text-base-content">
                   <p>
-                    Copyright © 2023 - All right reserved by Next Amazona V2
+                   {`Copyright © ${myDate || '2025'} - All right reserved by Webshine`}
                   </p>
                 </footer>
               </div>

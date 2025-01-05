@@ -8,7 +8,7 @@ const DashbaordPage = () => {
   return (
     <AdminLayout activeItem="dashboard">
       <Dashboard />
-      <h2>hello</h2>
+   
     </AdminLayout>
   )
 }
