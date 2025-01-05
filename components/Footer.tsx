@@ -2,18 +2,19 @@ import Image from "next/image"
 
 
 export default function Footer() {
-    return (<footer className="footer bg-blue-900 text-base-content p-10">
+    return (<footer className="footer bg-base-200 text-base-content p-10">
         <aside>
           <Image
             src="/images/logo.svg"
             alt="logo"
-            width={80}
-            height={60}
-            className="object-cover h-16 w-16"
+            width={280}
+            height={180}
+            className="object-cover h-10 w-24"
           />
-          <p>
+          <h4 className="font-bold text-2xl pl-4">
           CGE
-            <br />
+          </h4>
+            <p className="font-bold text-sm pl-4">
             Large Electrical Equipment Store
           </p>
         </aside>

@@ -27,7 +27,7 @@ const Header = () => {
              
             </label>
             <Link href="/" className="btn">
-              <Image src="/images/logo.svg" width={60} height={60} alt="" />
+              <Image src="/images/logo.svg" width={60} height={60} alt="" className="object-cover h-10 w-24 mb--4"  />
             </Link>
           </div>
 

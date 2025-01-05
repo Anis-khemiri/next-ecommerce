@@ -32,7 +32,7 @@ export default function RootLayout({
                 <Header />
                 {children}
                 <Footer />
-                <footer className="footer footer-center p-4 bg-blue-900 text-base-content">
+                <footer className="footer footer-center p-4 bg-base-300 text-base-content">
                   <p>
                    {`Copyright © ${myDate || '2025'} - All right reserved by Webshine`}
                   </p>
